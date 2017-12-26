@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    
+}
+
+/* CABECERA */
+
+header {
+    border-top: 25px solid #00643c;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid blue;
+    border-right: 2px solid blue;
+    border-left: 2px solid blue;
+
+
+}
+
+header .logo {
+    width: 75px;
+    height: 75px;
+    padding: 25px;
+
+}
+
+header .iniciarSesion {
+    position: absolute;
+    right: 0px;
+    padding: 25px;
+}
+
+header .buscador {
+    padding-top: 5px;
+
+}
+
+
+header .buscardor img {
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    margin-top: 55px;
+
+}
+
+/* MAIN */
+
+main {
+    background-color: #c9dcd1;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 10px;
+
+}
+
+main .boton {
+    color: green;
+    border: 1px solid green;
+    padding: 10px;
+    display: block;
+    width: 130px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+
+section .fotoNegra {
+    width: 100%;
+}
+
+section .fotoEstrella {
+    
+
+}
+
+/*background-color: #3d3a35;*/
