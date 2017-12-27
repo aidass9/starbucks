@@ -5,12 +5,13 @@ html
         meta(charset="utf-8")
         link(rel="stylesheet", href="./css/estilos.css")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
     
     body
         header
             img.logo(src="./imagenes/header/logo.png")
 
-            a.iniciarSesion(href="#") Sign in
+            a.iniciarSesion(href="#") Sign In
             .buscardor
                 img.buscarProductos(src="./imagenes/header/search.png")
                 img.localizacion(src="./imagenes/header/localizacion.png")
@@ -19,11 +20,140 @@ html
             
         main
             h1 New for the Holiday
-            p jsbdhfgkjbdfkgjsbfkjghdfh
-            a.boton(href="#") LEARN MORE          
+            p Rich espresso and steamed milk mingle with caramelized white chocolate in our Toasted White Chocolate
+                | Mocha - a delicious new way to celebrate the holiday. It's here for a limited time only.
+            a.boton.aprender(href="#") LEARN MORE          
         
-        section
-            img.fotoNegra(src="./imagenes/MSR-chalk-background.jpg")
+        section.rewards
             img.fotoEstrella(src="./imagenes/msr3_usen_logo.svg")
+            h2 Make every sip more rewarding
+            p Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food, get free refills, pay and order with your phone, and more.
+            a.boton.boton1(href="#") JOIN NOW
+            a.boton.boton2(href="#") SIGN IN
+
+        section.vasos
+            img.fotoVasos(src="./imagenes/vasos.png")
+            h2 ENJOY A $5 STARBUCKS CARD
+            p when you buy 4 grande handcrafted beverages after 2 PM at participating stores.
+            a.botonLeer(href="#") Learn more >>
+
+        section.section3
+            img.fotoMezcla(src="./imagenes/christmasBlend.png")
+            h2 ONE SIP STARTS THE SEASON
+            p With its vibrant cedaty-spice notes, this blend - which includes our expertly aged Sumatran
+                | coffee - pairs well holiday flavors abd good company.
+            a.botonDetalles(href="#") Details >>
+
+        section.section4
+            h2 JOIN STARBUCKS REWARDS™ IN DECEMBER, GET GOLD STATUS
+            p This month only, you can get the gift of Starbucks Rewards™ Gold status for a year,
+                | just by joining and making a single purchase. Simply pay with your registered Starbucks Card or
+                | App* and you’ll earn a full year of Gold level benefits, like Rewards and exclusive Bonus Star 
+                | offers. Already a member? Jump to Gold with a single visit*.
+
+            p.cita *Offer valid through 12/31/17 at participating Starbucks® stores. Excludes purchases of Starbucks Cards and Starbucks Card reloads.
+            a.botonOro(href="#") Get gold >>
+
+        section.redesCorreo
+
+            i.fa.fa-facebook(aria-hidden="true")
+            i.fa.fa-twitter(aria-hidden="true")
+            i.fa.fa-google-plus-square(aria-hidden="true")
+            i.fa.fa-pinterest(aria-hidden="true")
+            i.fa.fa-instagram(aria-hidden="true")
+
+            hr
+
+            form(method="post", action="#")
+                p Join our email list
+                input(type="email", name="email", placeholder="Email address")
+                br
+                input(type="number", name="codigoPostal", placeholder="Zip code")
+                br
+                input(type="submit", value="GET STARTED")
+                p 
+                    |By clicking "GET STARTED" I agree to receive news, promotions, information, and offers from Starbucks. See our 
+                    b Privacy Statement
+                    |  and 
+                    b Customer Service.
+       
         footer
+            ul
+                li 
+                    h4 ABOUT US
+                    img.fotoFlecha(src="./imagenes/flecha.svg")
+                    ul
+                        li Our Company
+                        li Investor Relations
+                        li Newsroom
+
+                li 
+                    h4 CAREER CENTER
+                    img.fotoFlecha(src="./imagenes/flecha.svg")
+                    ul
+                        li Working at Starbucks
+                        li College Plan
+                        li Current Partners
+                        li Corporate Careers
+                        li Manufacturing Distribution
+                        li Retail Careers
+                        li International Careers
+
+                li
+                    h4 FOR BUSINESS
+                    img.fotoFlecha(src="./imagenes/flecha.svg")
+                    ul
+                        li Office Coffee
+                        li Starbucks Coffee International
+                        li Foodservice
+                        li Licensed Stores
+                        li Starbucks Card Corporate Sales
+                        li Landlord Support Center
+                        li Suppliers
+
+                li
+                    h4 ONLINE COMMUNITY
+                    img.fotoFlecha(src="./imagenes/flecha.svg")
+                    ul
+                        li Twitter
+                        li Facebook
+                        li Instagram
+                        li Linkedln
+                        li Pinterest
+                        li Youtube
+                        li My Starbucks Idea
+
+                li
+                    h4 ONLINE COMMUNITY
+                    img.fotoFlecha(src="./imagenes/flecha.svg")
+                    ul
+                        li Twitter
+                        li Facebook
+                        li Instagram
+                        li Linkedln
+                        li Pinterest
+                        li Youtube
+                        li My Starbucks Idea
+
+                li
+                    h4 QUICK LINKS
+                    ul
+                        li My Account
+                        li Store Locator
+                        li Nutrition Info
+                        li Customer Service
+
+                li
+                    img.fotoUsa(src="./imagenes/us.png")
+                    |  Change Region >> | English
+                    ul
+                        li Web Accesibility
+                        li Private Policy
+                        li Terms of Use
+                        li Contact Us
+                        li Partners
+                        li Site Map
+
+            p © 2017 Starbucks Corporation. All rights reserved.
+                
 

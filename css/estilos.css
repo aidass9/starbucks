@@ -1,29 +1,45 @@
 @charset "utf-8";
 
+/*@font-face {
+    font-family: starbucks;
+    src: url("../fuentesLetras/starbucks_icons_global.woff")
+}*/
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: 0px;
 }
 
+body {
+    width: 100%;
+    font-family: Arial;
+}
+
 a {
     text-decoration: none;
 }
 
-body {
-    
+ul, li {
+    list-style: none;
+}
+
+.boton {
+    color: green;
+    border: 1px solid green;
+    padding: 10px;
+    display: block;
+    width: 130px;
+    margin: 20px auto;
+    border-radius: 5px;
 }
 
 /* CABECERA */
 
 header {
-    border-top: 25px solid #00643c;
+    border-top: 10px solid #00643c;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid blue;
-    border-right: 2px solid blue;
-    border-left: 2px solid blue;
-
 
 }
 
@@ -38,6 +54,7 @@ header .iniciarSesion {
     position: absolute;
     right: 0px;
     padding: 25px;
+    color: #5b5959;
 }
 
 header .buscador {
@@ -59,29 +76,271 @@ header .buscardor img {
 main {
     background-color: #c9dcd1;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 250px;
+    padding-bottom: 5px;
+
+}
+
+main h1 {
+    color: #003629;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+main p {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
     padding-bottom: 10px;
+    color: #003629;
+    line-height: 25px;
+}
+
+main .aprender {
+    color: #003629;
+    border: 1px solid #003629;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* SECTION 1 */
+
+section.rewards {
+    background-image: url('../imagenes/MSR-chalk-background.jpg');
+    background-repeat: no-repeat;
+    background-color: #0f0f0f;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+section.rewards .fotoEstrella {
+    width: 165px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+section.rewards a {
+    width: 80%;
 
 }
 
-main .boton {
-    color: green;
-    border: 1px solid green;
-    padding: 10px;
-    display: block;
-    width: 130px;
-    margin: 20px auto;
-    border-radius: 5px;
+section.rewards .boton1 {
+    background-color: #e3c383;
+    color: black;
+    border: 1px solid black;
+}
+
+section.rewards .boton1:hover {
+    opacity: 1;
 }
 
 
-section .fotoNegra {
+section.rewards .boton2 {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+
+    
+}
+
+section.rewards h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+section.rewards p {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    line-height: 25px;
+}
+
+/* SECTION 2 Y 3 */
+
+section.vasos {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+section.section3 {
+    background-color: #c9dcd1;
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+    
+}
+
+section.section4 {
+    background-color: #c9dcd1;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+section.vasos .fotoVasos {
+    width: 335px;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+section.vasos h2, section.section3 h2, section.section4 h2 {
+    color: #003629;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+
+}
+
+section.vasos p, section.section3 p, section.section4 p {
+    color: #003629;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 25px;
+    padding-bottom: 35px;
+}
+
+section.vasos .botonLeer, section.section3 .botonDetalles, section.section4 .botonOro {
+    color: #003629;
+    font-weight: bold;
+    border-bottom: 1px dotted #003629;
+    font-size: 16pt;
+
+}
+
+section.section3 .fotoMezcla {
+    padding-top: 20px;
     width: 100%;
 }
 
-section .fotoEstrella {
-    
+section.section4 p.cita {
+    font-size: small;
+}
+
+/* SECTION REDES Y CORREO */
+
+section.redesCorreo {
+    border-top: 3px solid white;
+    background-color: #f0f0f0;
+    padding-bottom: 50px;
+    border-bottom: 3px solid white;
+}
+
+section.redesCorreo i {
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25pt;
+}
+
+section.redesCorreo input[type=submit] {
+    background-color: #3d3935;
+    color: white;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+section.redesCorreo input[type=email], section.redesCorreo input[type=number] {
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: #908e8c;
+    border: 1px solid white;
 
 }
 
-/*background-color: #3d3a35;*/
+section.redesCorreo p {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section.redesCorreo input[type=number] {
+    padding-right: 15px;
+    width: 70px;
+    
+}
+
+section.redesCorreo input[type=email] {
+    width: 280px;
+}
+
+/*section.redesCorreo b {
+    border-bottom: 1px dotted #b8b7b5;
+}*/
+
+/* FOOTER */
+
+footer {
+    background-color: #f7f7f7;
+    border-bottom: 5px solid #382f2d;
+    padding-left: 25px;
+    line-height: 40px;
+
+
+}
+
+footer .fotoFlecha {
+    width: 12px;
+
+
+}
+
+footer h4 {
+    font-weight: bold;
+    border-top: 1px solid #b3b3b3;
+    padding-top: 10px;  
+    
+}
+
+
+footer p {
+    font-size: 10pt;   
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+
+/* BREACKPOINT */
+
+@media (min-width: 768px) {
+    main {
+        background-image: url('../imagenes/fondoTabletPC.png');
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    section.rewards {
+        display: table;
+    }
+
+    section.fotoEstrella {
+        display: table-cell;
+    }
+
+    section span.texto {
+        display: table-cell;
+        
+    }
+
+
+
+}
