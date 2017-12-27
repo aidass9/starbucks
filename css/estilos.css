@@ -1,10 +1,5 @@
 @charset "utf-8";
 
-/*@font-face {
-    font-family: starbucks;
-    src: url("../fuentesLetras/starbucks_icons_global.woff")
-}*/
-
 * {
     padding: 0px;
     margin: 0px;
@@ -283,10 +278,6 @@ section.redesCorreo input[type=email] {
     width: 280px;
 }
 
-/*section.redesCorreo b {
-    border-bottom: 1px dotted #b8b7b5;
-}*/
-
 /* FOOTER */
 
 footer {
@@ -311,6 +302,9 @@ footer h4 {
     
 }
 
+footer .fotoLateral {
+    display: none;
+}
 
 footer p {
     font-size: 10pt;   
@@ -324,23 +318,125 @@ footer p {
 @media (min-width: 768px) {
     main {
         background-image: url('../imagenes/fondoTabletPC.png');
-        background-repeat: no-repeat;
+        margin: 0px auto;
         width: 100%;
+        background-repeat: no-repeat;
+ 
     }
 
-    section.rewards {
+    section.rewards .tablaRewards {
         display: table;
-    }
-
-    section.fotoEstrella {
-        display: table-cell;
-    }
-
-    section span.texto {
-        display: table-cell;
         
     }
 
+    section.rewards .fotoEstrella {
+        display: table-cell;
+        padding-left: 30px;
+        padding-top: 80px;
+        width: 50%;
+        
+    }
 
+    section.rewards .textoRewards {
+        display: table-cell;
+        width: 50%;
+        text-align: left;
+        
+    }
 
+    section.rewards .botonesRewards a {
+        display: inline-block;
+        width: auto;
+        max-width: none;
+        text-align: center;
+        margin-left: 15px;
+        padding-left: 35px;      
+        padding-right: 35px;
+        
+        
+    }
+
+    section.vasos {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    section.vasos .divTextoVasos {
+        text-align: left;
+    }
+
+    section.vasos p {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    section.vasos a.botonLeer {
+        padding-left: 40px;
+    }
+
+    section.vasos{
+        text-align: left;
+
+    }
+
+    section.section4 {
+        display: none;
+    }
+
+    section.redesCorreo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    section.redesCorreo hr {
+        display: none;
+    }
+
+    section.redesCorreo .redes {
+        padding-left: 10px;
+        flex: 30%;
+    }
+
+    section.redesCorreo .correo {
+        padding-left: 10px;
+        flex: 60%;
+    }
+    
+    section.redesCorreo input[type=number] {
+        padding-right: 15px;
+        width: 70px;
+        display: inline;
+    }
+    
+    section.redesCorreo input[type=email] {
+        width: 200px;
+        display: inline;
+    }
+    
+    footer .fotoFlecha {
+        display: none;
+    
+    }
+
+    footer h4 {
+        font-weight: bold;
+        border-top: 0px solid #f7f7f7;
+        padding-top: 10px;  
+        
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .lista {
+        flex: 90%;
+    }
+
+    footer .fotoLateral {
+       display: inline;
+       flex: 10%;
+    }
+    
 }

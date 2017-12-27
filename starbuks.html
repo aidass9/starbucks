@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./imagenes/starbucks-icon.png">
   </head>
   <body>
     <header><img class="logo" src="./imagenes/header/logo.png"><a class="iniciarSesion" href="#">Sign In</a>
@@ -16,13 +17,21 @@
       <p>
         Rich espresso and steamed milk mingle with caramelized white chocolate in our Toasted White ChocolateMocha - a delicious new way to celebrate the holiday. It's here for a limited time only.</p><a class="boton aprender" href="#">LEARN MORE          </a>
     </main>
-    <section class="rewards"><img class="fotoEstrella" src="./imagenes/msr3_usen_logo.svg">
-      <h2>Make every sip more rewarding</h2>
-      <p>Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food, get free refills, pay and order with your phone, and more.</p><a class="boton boton1" href="#">JOIN NOW</a><a class="boton boton2" href="#">SIGN IN</a>
+    <section class="rewards">
+      <div class="tablaRewards"><img class="fotoEstrella" src="./imagenes/msr3_usen_logo.svg">
+        <div class="textoRewards">
+          <h2>Make every sip more rewarding</h2>
+          <p>Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food, get free refills, pay and order with your phone, and more.</p>
+        </div>
+      </div>
+      <div class="botonesRewards"><a class="boton boton1" href="#">JOIN NOW</a><a class="boton boton2" href="#">SIGN IN</a></div>
     </section>
-    <section class="vasos"><img class="fotoVasos" src="./imagenes/vasos.png">
-      <h2>ENJOY A $5 STARBUCKS CARD</h2>
-      <p>when you buy 4 grande handcrafted beverages after 2 PM at participating stores.</p><a class="botonLeer" href="#">Learn more >></a>
+    <section class="vasos">
+      <div class="divFotoVasos"><img class="fotoVasos" src="./imagenes/vasos.png"></div>
+      <div class="divTextoVasos">
+        <h2>ENJOY A $5 STARBUCKS CARD</h2>
+        <p>when you buy 4 grande handcrafted beverages after 2 PM at participating stores.</p><a class="botonLeer" href="#">Learn more >></a>
+      </div>
     </section>
     <section class="section3"><img class="fotoMezcla" src="./imagenes/christmasBlend.png">
       <h2>ONE SIP STARTS THE SEASON</h2>
@@ -38,96 +47,102 @@
       </p>
       <p class="cita">*Offer valid through 12/31/17 at participating Starbucks® stores. Excludes purchases of Starbucks Cards and Starbucks Card reloads.</p><a class="botonOro" href="#">Get gold >></a>
     </section>
-    <section class="redesCorreo"><i class="fa fa-facebook" aria-hidden="true"></i><i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-google-plus-square" aria-hidden="true"></i><i class="fa fa-pinterest" aria-hidden="true"></i><i class="fa fa-instagram" aria-hidden="true"></i>
+    <section class="redesCorreo">
+      <div class="redes"><i class="fa fa-facebook" aria-hidden="true"></i><i class="fa fa-twitter" aria-hidden="true"></i><i class="fa fa-google-plus-square" aria-hidden="true"></i><i class="fa fa-pinterest" aria-hidden="true"></i><i class="fa fa-instagram" aria-hidden="true"></i></div>
       <hr>
-      <form method="post" action="#">
-        <p>Join our email list</p>
-        <input type="email" name="email" placeholder="Email address"><br>
-        <input type="number" name="codigoPostal" placeholder="Zip code"><br>
-        <input type="submit" value="GET STARTED">
-        <p>
-           By clicking "GET STARTED" I agree to receive news, promotions, information, and offers from Starbucks. See our <b>Privacy Statement</b> and <b>Customer Service.</b></p>
-      </form>
+      <div class="correo">
+        <form method="post" action="#">
+          <p>Join our email list</p>
+          <input type="email" name="email" placeholder="Email address"><br>
+          <input type="number" name="codigoPostal" placeholder="Zip code"><br>
+          <input type="submit" value="GET STARTED">
+          <p>
+             By clicking "GET STARTED" I agree to receive news, promotions, information, and offers from Starbucks. See our <b>Privacy Statement</b> and <b>Customer Service.</b></p>
+        </form>
+      </div>
     </section>
     <footer>
-      <ul>
-        <li> 
-          <h4>ABOUT US</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
-          <ul>
-            <li>Our Company</li>
-            <li>Investor Relations</li>
-            <li>Newsroom</li>
-          </ul>
-        </li>
-        <li> 
-          <h4>CAREER CENTER</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
-          <ul>
-            <li>Working at Starbucks</li>
-            <li>College Plan</li>
-            <li>Current Partners</li>
-            <li>Corporate Careers</li>
-            <li>Manufacturing Distribution</li>
-            <li>Retail Careers</li>
-            <li>International Careers</li>
-          </ul>
-        </li>
-        <li>
-          <h4>FOR BUSINESS</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
-          <ul>
-            <li>Office Coffee</li>
-            <li>Starbucks Coffee International</li>
-            <li>Foodservice</li>
-            <li>Licensed Stores</li>
-            <li>Starbucks Card Corporate Sales</li>
-            <li>Landlord Support Center</li>
-            <li>Suppliers</li>
-          </ul>
-        </li>
-        <li>
-          <h4>ONLINE COMMUNITY</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
-          <ul>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedln</li>
-            <li>Pinterest</li>
-            <li>Youtube</li>
-            <li>My Starbucks Idea</li>
-          </ul>
-        </li>
-        <li>
-          <h4>ONLINE COMMUNITY</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
-          <ul>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedln</li>
-            <li>Pinterest</li>
-            <li>Youtube</li>
-            <li>My Starbucks Idea</li>
-          </ul>
-        </li>
-        <li>
-          <h4>QUICK LINKS</h4>
-          <ul>
-            <li>My Account</li>
-            <li>Store Locator</li>
-            <li>Nutrition Info</li>
-            <li>Customer Service</li>
-          </ul>
-        </li>
-        <li><img class="fotoUsa" src="./imagenes/us.png"> Change Region >> | English
-          <ul>
-            <li>Web Accesibility</li>
-            <li>Private Policy</li>
-            <li>Terms of Use</li>
-            <li>Contact Us</li>
-            <li>Partners</li>
-            <li>Site Map</li>
-          </ul>
-        </li>
-      </ul>
-      <p>© 2017 Starbucks Corporation. All rights reserved.</p>
+      <div class="lista">
+        <ul>
+          <li> 
+            <h4>ABOUT US</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
+            <ul>
+              <li>Our Company</li>
+              <li>Investor Relations</li>
+              <li>Newsroom</li>
+            </ul>
+          </li>
+          <li> 
+            <h4>CAREER CENTER</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
+            <ul>
+              <li>Working at Starbucks</li>
+              <li>College Plan</li>
+              <li>Current Partners</li>
+              <li>Corporate Careers</li>
+              <li>Manufacturing Distribution</li>
+              <li>Retail Careers</li>
+              <li>International Careers</li>
+            </ul>
+          </li>
+          <li>
+            <h4>FOR BUSINESS</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
+            <ul>
+              <li>Office Coffee</li>
+              <li>Starbucks Coffee International</li>
+              <li>Foodservice</li>
+              <li>Licensed Stores</li>
+              <li>Starbucks Card Corporate Sales</li>
+              <li>Landlord Support Center</li>
+              <li>Suppliers</li>
+            </ul>
+          </li>
+          <li>
+            <h4>ONLINE COMMUNITY</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
+            <ul>
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Linkedln</li>
+              <li>Pinterest</li>
+              <li>Youtube</li>
+              <li>My Starbucks Idea</li>
+            </ul>
+          </li>
+          <li>
+            <h4>ONLINE COMMUNITY</h4><img class="fotoFlecha" src="./imagenes/flecha.svg">
+            <ul>
+              <li>Twitter</li>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Linkedln</li>
+              <li>Pinterest</li>
+              <li>Youtube</li>
+              <li>My Starbucks Idea</li>
+            </ul>
+          </li>
+          <li>
+            <h4>QUICK LINKS</h4>
+            <ul>
+              <li>My Account</li>
+              <li>Store Locator</li>
+              <li>Nutrition Info</li>
+              <li>Customer Service</li>
+            </ul>
+          </li>
+          <li><img class="fotoUsa" src="./imagenes/us.png"> Change Region >> | English
+            <ul>
+              <li>Web Accesibility</li>
+              <li>Private Policy</li>
+              <li>Terms of Use</li>
+              <li>Contact Us</li>
+              <li>Partners</li>
+              <li>Site Map</li>
+            </ul>
+          </li>
+        </ul>
+        <p>© 2017 Starbucks Corporation. All rights reserved.</p>
+      </div>
+      <div class="fotoLateral"><img src="./imagenes/wordmark_footer_tcm31-397.png"></div>
     </footer>
   </body>
 </html>
